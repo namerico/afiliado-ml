@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>namerico — As melhores ofertas selecionadas para você</title>
+  <meta name="description" content="Encontre os melhores produtos com preços incríveis. Ofertas selecionadas do Mercado Livre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #f5f5f5;
+      --color-surface: #ffffff;
+      --color-text: #1a1a1a;
+      --color-text-secondary: #6b7280;
+      --color-primary: #3483fa;
+      --color-primary-hover: #2968c8;
+      --color-accent: #00a650;
+      --color-border: #e5e7eb;
+      --color-badge-bg: #f0fdf4;
+      --color-badge-text: #166534;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+      --radius: 8px;
+      --radius-lg: 12px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.5;
+    }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+
+    /* Header */
+    header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .brand {
+      text-align: center;
+    }
+
+    .brand h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      letter-spacing: -0.5px;
+    }
+
+    .brand p {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+    }
+
+    /* Search */
+    .search-box {
+      position: relative;
+      max-width: 480px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 16px 10px 40px;
+      border: 2px solid var(--color-border);
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-family: inherit;
+      background: var(--color-bg);
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+    }
+
+    .search-box input:focus {
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(52,131,250,0.15);
+    }
+
+    .search-box::before {
+      content: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236b7280' viewBox='0 0 24 24'><path d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' stroke='%236b7280' stroke-width='2' stroke-linecap='round' fill='none'/></svg>");
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+
+    /* Tabs */
+    .tabs-container {
+      padding: 16px 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .tabs-container::-webkit-scrollbar { display: none; }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-width: max-content;
+    }
+
+    .tab {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      background: var(--color-surface);
+      color: var(--color-text-secondary);
+      border: 1px solid var(--color-border);
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .tab:hover {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+    }
+
+    .tab.active {
+      background: var(--color-primary);
+      color: #fff;
+      border-color: var(--color-primary);
+      box-shadow: 0 2px 8px rgba(52,131,250,0.3);
+    }
+
+    /* Products Grid */
+    .products-section { padding: 24px 0 48px; }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .section-header h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .product-count {
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    /* Product Card */
+    .product-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .card-image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      background: var(--color-bg);
+    }
+
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body h3 {
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--color-text);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .card-price {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-top: 8px;
+    }
+
+    .card-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--color-badge-bg);
+      color: var(--color-badge-text);
+      margin-top: 8px;
+      align-self: flex-start;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .card-cta {
+      margin-top: 12px;
+    }
+
+    .card-cta a {
+      display: block;
+      text-align: center;
+      padding: 10px;
+      background: var(--color-primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: var(--radius);
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: background 0.2s;
+    }
+
+    .card-cta a:hover {
+      background: var(--color-primary-hover);
+    }
+
+    /* No results */
+    .no-results {
+      text-align: center;
+      padding: 48px 16px;
+      color: var(--color-text-secondary);
+    }
+
+    .no-results span { font-size: 2rem; display: block; margin-bottom: 8px; }
+
+    /* Footer */
+    footer {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      padding: 24px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.75rem;
+      color: var(--color-text-secondary);
+    }
+
+    footer a { color: var(--color-primary); }
+
+    /* Responsive */
+    @media (min-width: 768px) {
+      .header-inner {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .brand { text-align: left; flex-shrink: 0; }
+
+      .search-box { margin: 0; max-width: 360px; }
+
+      .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="store-name">namerico</h1>
+        <p id="store-tagline">Carregando...</p>
+      </div>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Buscar produtos...">
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="tabs-container" id="tabs-container">
+      <div class="tabs" id="tabs">
+        <!-- Tabs injected by JS -->
+      </div>
+    </nav>
+
+    <main class="products-section">
+      <div class="section-header">
+        <h2 id="section-title">Todos os produtos</h2>
+        <span class="product-count" id="product-count"></span>
+      </div>
+      <div class="products-grid" id="products-grid">
+        <!-- Products injected by JS -->
+      </div>
+    </main>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <strong>namerico</strong> — Vitrine de ofertas. Este site contém links de afiliado do Mercado Livre. Ao clicar, você é redirecionado para o site do Mercado Livre.</p>
+    </div>
+  </footer>
+
+  <script>
+    const GRID = document.getElementById('products-grid');
+    const TABS = document.getElementById('tabs');
+    const SEARCH = document.getElementById('search');
+    const SECTION_TITLE = document.getElementById('section-title');
+    const PRODUCT_COUNT = document.getElementById('product-count');
+    const TAGLINE = document.getElementById('store-tagline');
+
+    let activeCategory = 'all';
+    let searchTerm = '';
+    let data = null;
+
+    function renderTabs(categories) {
+      const tabs = ['<button class="tab active" data-category="all">Todos</button>'];
+      categories.forEach(cat => {
+        tabs.push(`<button class="tab" data-category="${cat}">${cat}</button>`);
+      });
+      TABS.innerHTML = tabs.join('');
+
+      TABS.querySelectorAll('.tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeCategory = btn.dataset.category;
+          TABS.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          btn.classList.add('active');
+          renderProducts();
+        });
+      });
+    }
+
+    function getFilteredProducts() {
+      let products = data.products;
+      if (activeCategory !== 'all') {
+        products = products.filter(p => p.category === activeCategory);
+      }
+      if (searchTerm) {
+        const q = searchTerm.toLowerCase();
+        products = products.filter(p => p.name.toLowerCase().includes(q));
+      }
+      return products;
+    }
+
+    function renderProducts() {
+      const filtered = getFilteredProducts();
+      PRODUCT_COUNT.textContent = `${filtered.length} produto${filtered.length !== 1 ? 's' : ''}`;
+
+      if (searchTerm) {
+        SECTION_TITLE.textContent = `Resultados para "${searchTerm}"`;
+      } else if (activeCategory === 'all') {
+        SECTION_TITLE.textContent = 'Todos os produtos';
+      } else {
+        SECTION_TITLE.textContent = activeCategory;
+      }
+
+      if (filtered.length === 0) {
+        GRID.innerHTML = `<div class="no-results"><span>🔍</span><p>Nenhum produto encontrado.</p></div>`;
+        return;
+      }
+
+      GRID.innerHTML = filtered.map(product => `
+        <article class="product-card">
+          <img class="card-image" src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22260%22><rect fill=%22%23f5f5f5%22 width=%22260%22 height=%22260%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%236b7280%22 font-family=%22sans-serif%22 font-size=%2214%22>Sem imagem</text></svg>'">
+          <div class="card-body">
+            <h3>${product.name}</h3>
+            <div class="card-price">${product.price}</div>
+            ${product.featured ? '<span class="card-badge">Destaque</span>' : ''}
+            <div class="card-cta">
+              <a href="${product.affiliateLink}" target="_blank" rel="noopener noreferrer" onclick="trackClick('${product.id}')">Ver no Mercado Livre</a>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function trackClick(productId) {
+      console.log('[affiliate-click]', productId, new Date().toISOString());
+    }
+
+    SEARCH.addEventListener('input', (e) => {
+      searchTerm = e.target.value.trim();
+      renderProducts();
+    });
+
+    fetch('products.json')
+      .then(res => res.json())
+      .then(json => {
+        data = json;
+        TAGLINE.textContent = json.store.tagline || '';
+        renderTabs(json.categories);
+        renderProducts();
+      })
+      .catch(err => {
+        TAGLINE.textContent = 'Erro ao carregar produtos. Verifique o arquivo products.json.';
+        console.error('Failed to load products:', err);
+      });
+  </script>
+
+</body>
+</html>
