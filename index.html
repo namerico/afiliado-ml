@@ -223,6 +223,12 @@
       margin-top: 8px;
     }
 
+    .card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-top: 8px;
+    }
     .card-badge {
       display: inline-block;
       font-size: 0.7rem;
@@ -231,10 +237,32 @@
       border-radius: 999px;
       background: var(--color-badge-bg);
       color: var(--color-badge-text);
-      margin-top: 8px;
-      align-self: flex-start;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+    }
+    .card-badge-discount {
+      background: #fff3e0;
+      color: #e65100;
+    }
+    .card-badge-bestseller {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+    .card-original-price {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      text-decoration: line-through;
+    }
+    .card-rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.8rem;
+      color: #f59e0b;
+      margin-top: 6px;
+    }
+    .card-rating .rating-count {
+      color: var(--color-text-secondary);
     }
 
     .card-cta {
@@ -396,19 +424,36 @@
         return;
       }
 
-      GRID.innerHTML = filtered.map(product => `
+      GRID.innerHTML = filtered.map(product => {
+        const badges = [];
+        if (product.bestSeller) {
+          badges.push(`<span class="card-badge card-badge-bestseller">${product.bestSellerRank ? product.bestSellerRank + ' mais vendido' : 'Mais vendido'}</span>`);
+        }
+        if (product.discount) {
+          badges.push(`<span class="card-badge card-badge-discount">${product.discount}% OFF</span>`);
+        }
+        if (product.featured && !product.bestSeller && !product.discount) {
+          badges.push(`<span class="card-badge">Destaque</span>`);
+        }
+        const badgesHtml = badges.length ? `<div class="card-badges">${badges.join('')}</div>` : '';
+        const originalPriceHtml = product.originalPrice ? `<span class="card-original-price">${product.originalPrice}</span>` : '';
+        const ratingHtml = product.rating ? `<div class="card-rating"><span>★</span><strong>${product.rating}</strong><span class="rating-count">(${product.reviewCount || 0})</span></div>` : '';
+
+        return `
         <article class="product-card">
           <img class="card-image" src="${product.image}" alt="${product.name}" loading="lazy" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22260%22 height=%22260%22><rect fill=%22%23f5f5f5%22 width=%22260%22 height=%22260%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%236b7280%22 font-family=%22sans-serif%22 font-size=%2214%22>Sem imagem</text></svg>'">
           <div class="card-body">
             <h3>${product.name}</h3>
+            ${originalPriceHtml}
             <div class="card-price">${product.price}</div>
-            ${product.featured ? '<span class="card-badge">Destaque</span>' : ''}
+            ${badgesHtml}
+            ${ratingHtml}
             <div class="card-cta">
               <a href="${product.affiliateLink}" target="_blank" rel="noopener noreferrer" onclick="trackClick('${product.id}')">Ver no Mercado Livre</a>
             </div>
           </div>
-        </article>
-      `).join('');
+        </article>`;
+      }).join('');
     }
 
     function trackClick(productId) {

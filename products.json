@@ -7,6 +7,21 @@
   "products": [
     {
       "id": 1,
+      "name": "Samsung Galaxy A06 5G Dual SIM 128GB Preto",
+      "price": "R$ 650,32",
+      "originalPrice": "R$ 989,00",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_716412-MLA99524473372_122025-F.webp",
+      "category": "Tech",
+      "featured": true,
+      "rating": 4.8,
+      "reviewCount": 4242,
+      "bestSeller": true,
+      "bestSellerRank": 6,
+      "discount": 34,
+      "affiliateLink": "https://meli.la/2p2pEov"
+    },
+    {
+      "id": 2,
       "name": "Smart Tv H5000f Hd 32 Polegadas 2025 Preto Samsung Bivolt",
       "price": "R$ 1.066,03",
       "image": "https://http2.mlstatic.com/D_NQ_NP_2X_973138-MLA99968160801_112025-F.webp",
@@ -15,7 +30,7 @@
       "affiliateLink": "https://meli.la/2Gf6WYw"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Teclado Mecânico Gamer RGB 60% Switch Blue",
       "price": "R$ 149,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_620089-MLA72178471989_092023-O.webp",
@@ -24,7 +39,7 @@
       "affiliateLink": "https://meli.la/2p2pEov"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Mouse Sem Fio Ergonômico 2.4GHz Recarregável",
       "price": "R$ 59,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_983313-MLA72147899575_092023-O.webp",
@@ -33,7 +48,7 @@
       "affiliateLink": "https://meli.la/2Du3p7w"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Luminária LED de Mesa com 3 Intensidades USB",
       "price": "R$ 45,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_743502-MLA71715179156_082023-O.webp",
