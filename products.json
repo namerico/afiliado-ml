@@ -1,54 +1,54 @@
 {
   "store": {
     "name": "namerico",
-    "tagline": "As melhores ofertas selecionadas para voc\u00ea"
+    "tagline": "As melhores ofertas selecionadas para você"
   },
   "categories": ["Tech", "Casa", "Games", "Moda"],
   "products": [
     {
       "id": 1,
-      "name": "Fone de Ouvido Bluetooth TWS com Cancelamento de Ru\u00eddo",
+      "name": "Fone de Ouvido Bluetooth TWS com Cancelamento de Ruído",
       "price": "R$ 89,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_695123-MLA72490479614_102023-O.webp",
       "category": "Tech",
       "featured": true,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2Gf6WYw"
     },
     {
       "id": 2,
-      "name": "Teclado Mec\u00e2nico Gamer RGB 60% Switch Blue",
+      "name": "Teclado Mecânico Gamer RGB 60% Switch Blue",
       "price": "R$ 149,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_620089-MLA72178471989_092023-O.webp",
       "category": "Tech",
       "featured": false,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2p2pEov"
     },
     {
       "id": 3,
-      "name": "Mouse Sem Fio Ergon\u00f4mico 2.4GHz Recarreg\u00e1vel",
+      "name": "Mouse Sem Fio Ergonômico 2.4GHz Recarregável",
       "price": "R$ 59,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_983313-MLA72147899575_092023-O.webp",
       "category": "Tech",
       "featured": false,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2Du3p7w"
     },
     {
       "id": 4,
-      "name": "Lumin\u00e1ria LED de Mesa com 3 Intensidades USB",
+      "name": "Luminária LED de Mesa com 3 Intensidades USB",
       "price": "R$ 45,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_743502-MLA71715179156_082023-O.webp",
       "category": "Casa",
       "featured": true,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/1KL96im"
     },
     {
       "id": 5,
-      "name": "Organizador Multiuso Dobr\u00e1vel Tecido Oxford",
+      "name": "Organizador Multiuso Dobrável Tecido Oxford",
       "price": "R$ 34,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_891234-MLA71856734521_092023-O.webp",
       "category": "Casa",
       "featured": false,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2ih33Bw"
     },
     {
       "id": 6,
@@ -57,25 +57,25 @@
       "image": "https://http2.mlstatic.com/D_NQ_NP_654321-MLA71923456789_092023-O.webp",
       "category": "Games",
       "featured": false,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/1mgojAC"
     },
     {
       "id": 7,
-      "name": "Rel\u00f3gio Digital Esportivo \u00e0 Prova D'\u00e1gua",
+      "name": "Relógio Digital Esportivo à Prova D'água",
       "price": "R$ 69,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_789012-MLA72034567890_092023-O.webp",
       "category": "Moda",
       "featured": true,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2KT1kiv"
     },
     {
       "id": 8,
-      "name": "Mochila Imperme\u00e1vel com Porta USB Notebook 15\"",
+      "name": "Mochila Impermeável com Porta USB Notebook 15\"",
       "price": "R$ 99,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_456789-MLA72145678901_092023-O.webp",
       "category": "Moda",
       "featured": false,
-      "affiliateLink": "https://mercadolivre.com/sec/SEU_LINK_AQUI"
+      "affiliateLink": "https://meli.la/2gEgEBA"
     }
   ]
 }
