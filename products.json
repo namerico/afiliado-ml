@@ -58,11 +58,17 @@
     },
     {
       "id": 6,
-      "name": "Organizador Multiuso Dobrável Tecido Oxford",
-      "price": "R$ 34,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_891234-MLA71856734521_092023-O.webp",
-      "category": "Casa",
-      "featured": false,
+      "name": "Parafusadeira Furadeira 48v Profissional 2 Baterias Sem Fio",
+      "price": "R$ 149,90",
+      "originalPrice": "R$ 299,90",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_846133-MLB98971529123_112025-F.webp",
+      "category": "Tech",
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 2771,
+      "bestSeller": true,
+      "bestSellerRank": 3,
+      "discount": 50,
       "affiliateLink": "https://meli.la/2ih33Bw"
     },
     {
