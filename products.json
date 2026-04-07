@@ -90,6 +90,19 @@
       "affiliateLink": "https://meli.la/2KT1kiv"
     },
     {
+      "id": 14,
+      "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
+      "price": "R$ 115,90",
+      "originalPrice": "R$ 229,99",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_727838-MLA106862284149_022026-F-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
+      "category": "Moda",
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 4798,
+      "discount": 49,
+      "affiliateLink": "https://meli.la/2gEgEBA"
+    },
+    {
       "id": 9,
       "name": "Mochila Impermeável com Porta USB Notebook 15\"",
       "price": "R$ 99,90",
@@ -127,6 +140,36 @@
       "bestSellerRank": 1,
       "discount": 61,
       "affiliateLink": "https://meli.la/1KL96im"
+    },
+    {
+      "id": 12,
+      "name": "Webcam Camera Full Hd Zoom 1080p 360 Graus Videoconferencia Streamcam Web Cam Entrada Usb 2.0 Com Microfone- GoodVision",
+      "price": "R$ 38,98",
+      "originalPrice": "R$ 78,00",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_807092-MLA100966388363_122025-F.webp",
+      "category": "Tech",
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 14001,
+      "bestSeller": true,
+      "bestSellerRank": 1,
+      "discount": 50,
+      "affiliateLink": "https://meli.la/1mgojAC"
+    },
+    {
+      "id": 13,
+      "name": "Kit 10 Potes Herméticos Vidro 640ml Starhouse Marmita Forno Micro-ondas",
+      "price": "R$ 118,00",
+      "originalPrice": "R$ 169,97",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_851388-MLA99988740405_112025-F.webp",
+      "category": "Casa",
+      "featured": true,
+      "rating": 4.9,
+      "reviewCount": 27930,
+      "bestSeller": true,
+      "bestSellerRank": 1,
+      "discount": 30,
+      "affiliateLink": "https://meli.la/2KT1kiv"
     }
   ]
 }
