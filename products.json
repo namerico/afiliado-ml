@@ -30,33 +30,6 @@
       "affiliateLink": "https://meli.la/2Gf6WYw"
     },
     {
-      "id": 3,
-      "name": "Teclado Mecânico Gamer RGB 60% Switch Blue",
-      "price": "R$ 149,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_620089-MLA72178471989_092023-O.webp",
-      "category": "Tech",
-      "featured": false,
-      "affiliateLink": "https://meli.la/2p2pEov"
-    },
-    {
-      "id": 4,
-      "name": "Mouse Sem Fio Ergonômico 2.4GHz Recarregável",
-      "price": "R$ 59,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_983313-MLA72147899575_092023-O.webp",
-      "category": "Tech",
-      "featured": false,
-      "affiliateLink": "https://meli.la/2Du3p7w"
-    },
-    {
-      "id": 5,
-      "name": "Luminária LED de Mesa com 3 Intensidades USB",
-      "price": "R$ 45,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_743502-MLA71715179156_082023-O.webp",
-      "category": "Casa",
-      "featured": true,
-      "affiliateLink": "https://meli.la/1KL96im"
-    },
-    {
       "id": 6,
       "name": "Parafusadeira Furadeira 48v Profissional 2 Baterias Sem Fio",
       "price": "R$ 149,90",
@@ -70,46 +43,6 @@
       "bestSellerRank": 3,
       "discount": 50,
       "affiliateLink": "https://meli.la/2ih33Bw"
-    },
-    {
-      "id": 7,
-      "name": "Controle Joystick Bluetooth para Celular/PC/PS3",
-      "price": "R$ 79,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_654321-MLA71923456789_092023-O.webp",
-      "category": "Games",
-      "featured": false,
-      "affiliateLink": "https://meli.la/1mgojAC"
-    },
-    {
-      "id": 8,
-      "name": "Relógio Digital Esportivo à Prova D'água",
-      "price": "R$ 69,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_789012-MLA72034567890_092023-O.webp",
-      "category": "Moda",
-      "featured": true,
-      "affiliateLink": "https://meli.la/2KT1kiv"
-    },
-    {
-      "id": 14,
-      "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
-      "price": "R$ 115,90",
-      "originalPrice": "R$ 229,99",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_727838-MLA106862284149_022026-F-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
-      "category": "Moda",
-      "featured": true,
-      "rating": 4.7,
-      "reviewCount": 4798,
-      "discount": 49,
-      "affiliateLink": "https://meli.la/2gEgEBA"
-    },
-    {
-      "id": 9,
-      "name": "Mochila Impermeável com Porta USB Notebook 15\"",
-      "price": "R$ 99,90",
-      "image": "https://http2.mlstatic.com/D_NQ_NP_456789-MLA72145678901_092023-O.webp",
-      "category": "Moda",
-      "featured": false,
-      "affiliateLink": "https://meli.la/2gEgEBA"
     },
     {
       "id": 10,
@@ -170,6 +103,19 @@
       "bestSellerRank": 1,
       "discount": 30,
       "affiliateLink": "https://meli.la/2KT1kiv"
+    },
+    {
+      "id": 14,
+      "name": "Tênis Casual Kappa Zenit Masculino Unissex Conforto",
+      "price": "R$ 115,90",
+      "originalPrice": "R$ 229,99",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_727838-MLA106862284149_022026-F-tnis-casual-kappa-zenit-masculino-unissex-conforto.webp",
+      "category": "Moda",
+      "featured": true,
+      "rating": 4.7,
+      "reviewCount": 4798,
+      "discount": 49,
+      "affiliateLink": "https://meli.la/2gEgEBA"
     }
   ]
 }
