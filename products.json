@@ -57,7 +57,7 @@
       "affiliateLink": "https://meli.la/1KL96im"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Organizador Multiuso Dobrável Tecido Oxford",
       "price": "R$ 34,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_891234-MLA71856734521_092023-O.webp",
@@ -66,7 +66,7 @@
       "affiliateLink": "https://meli.la/2ih33Bw"
     },
     {
-      "id": 6,
+      "id": 7,
       "name": "Controle Joystick Bluetooth para Celular/PC/PS3",
       "price": "R$ 79,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_654321-MLA71923456789_092023-O.webp",
@@ -75,7 +75,7 @@
       "affiliateLink": "https://meli.la/1mgojAC"
     },
     {
-      "id": 7,
+      "id": 8,
       "name": "Relógio Digital Esportivo à Prova D'água",
       "price": "R$ 69,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_789012-MLA72034567890_092023-O.webp",
@@ -84,13 +84,28 @@
       "affiliateLink": "https://meli.la/2KT1kiv"
     },
     {
-      "id": 8,
+      "id": 9,
       "name": "Mochila Impermeável com Porta USB Notebook 15\"",
       "price": "R$ 99,90",
       "image": "https://http2.mlstatic.com/D_NQ_NP_456789-MLA72145678901_092023-O.webp",
       "category": "Moda",
       "featured": false,
       "affiliateLink": "https://meli.la/2gEgEBA"
+    },
+    {
+      "id": 10,
+      "name": "Kit Body Splash Masculino Barbarius e Midtown 200ml - Primacial",
+      "price": "R$ 84,90",
+      "originalPrice": "R$ 139,00",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_847667-MLA97122485144_112025-F.webp",
+      "category": "Moda",
+      "featured": true,
+      "rating": 4.5,
+      "reviewCount": 8102,
+      "bestSeller": true,
+      "bestSellerRank": 1,
+      "discount": 38,
+      "affiliateLink": "https://meli.la/2Du3p7w"
     }
   ]
 }
