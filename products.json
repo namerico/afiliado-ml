@@ -106,6 +106,21 @@
       "bestSellerRank": 1,
       "discount": 38,
       "affiliateLink": "https://meli.la/2Du3p7w"
+    },
+    {
+      "id": 11,
+      "name": "Brinox Pressure Panela de Pressão Revestimento Cerâmica Indução 4,2L",
+      "price": "R$ 184,90",
+      "originalPrice": "R$ 479,99",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_934016-MLA106965378420_022026-F.webp",
+      "category": "Casa",
+      "featured": true,
+      "rating": 4.9,
+      "reviewCount": 17554,
+      "bestSeller": true,
+      "bestSellerRank": 1,
+      "discount": 61,
+      "affiliateLink": "https://meli.la/1KL96im"
     }
   ]
 }
